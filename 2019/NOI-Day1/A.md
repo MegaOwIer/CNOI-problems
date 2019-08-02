@@ -43,6 +43,8 @@ The first line contains $5$ integers $n, m, A, B, C$.
 
 Each of the next $m$ lines contains $4$ integers $p_i, q_i, x_i, y_i$.
 
+It is guaranteed that there is at least one way for little cat to go home.
+
 ### Output
 
 Print a single integer — the minimal anxiety.
