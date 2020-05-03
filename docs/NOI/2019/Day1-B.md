@@ -1,17 +1,16 @@
-## B. robot
+Time limit per test : $\texttt{3 s}$
 
-Time limit per test : 3 s
-
-Memory limit per test : 512 MB
+Memory limit per test : $\texttt{512 MB}$
 
 You can submit this problem at:
 
 + [LibreOJ](https://loj.ac/problem/3157)
-  + Input : `robot.in`
-  + Output : `robot.out`
+    + Input : `robot.in`
+    + Output : `robot.out`
 + [Luogu](https://www.luogu.org/problem/P5469)
++ [UOJ](https://uoj.ac/problem/479)
 
-### Description
+## Description
 
 Recently, Bob invented $2$ kinds of robots: type P and type Q. Now he wants to test the mobility of these two robots.
 
@@ -33,20 +32,20 @@ Bob can set the height of all the pillars, the height of the $i$-th pillar can b
 
 Since the answer could be very large, you should print the answer module $10^9 + 7$ instead.
 
-### Input
+## Input
 
 The first line contains a single integer $n$.
 
 Each of the next $n$ lines contains twp integers $A_i, B_i$.
 
-### Output
+## Output
 
 Print a single integer — the answer module $10^9 + 7$.
 
-### Samples
+## Samples
 
-#### Sample 1
-##### Input
+### Sample 1
+#### Input
 ```plain
 5
 3 3
@@ -58,12 +57,12 @@ Print a single integer — the answer module $10^9 + 7$.
 ```
 **Note : In Chinese statement, the sample input isn't printed correctly.**
 
-##### Output
+#### Output
 ```plain
 1
 
 ```
-##### Explanation
+#### Explanation
 
 There are two possible ways to set the heights:
 
@@ -71,10 +70,8 @@ There are two possible ways to set the heights:
 + If the heights are $3\,2\,4\,2\,3$ respectively. We can show that no matter which number $s$ is, the condition is always satisfied.
 
 
-More samples can be found in the folder `robot/`.
-
-### Constraints
+## Constraints
 
 For all of the tests, $1 \leq n \leq 300$, $1 \leq A_i \leq B_i \leq 10^9$.
 
-For partial scores, you can look up at the origin statement (`2019-NOI-Day1.pdf`).
+For partial scores, you can look up at the origin statement (`NOI/2019/Day1.pdf`).

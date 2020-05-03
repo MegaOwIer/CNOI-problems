@@ -1,0 +1,70 @@
+site_name: CNOI Problem Archive
+
+# Repository
+repo_url: https://github.com/MegaOwIer/CNOI-problems
+
+# Contents
+nav:
+  - Home: index.md
+  - NOI:
+    - 2019:
+      - Day 1, Task A: NOI/2019/Day1-A.md
+      - Day 1, Task B: NOI/2019/Day1-B.md
+      - Day 1, Task C: NOI/2019/Day1-C.md
+      - Day 2, Task A: NOI/2019/Day2-A.md
+      - Day 2, Task B: NOI/2019/Day2-B.md
+      - Day 2, Task C: NOI/2019/Day2-C.md
+    - 2018:
+      - Day 1, Task A: NOI/2018/Day1-A.md
+  - About the Contests: about.md
+
+# Theme
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'white'
+    accent: 'red'
+  include_search_page: false
+  search_index_only: true
+
+  feature:
+    tabs: true
+  font:
+    # text: 'Times New Roman'
+    code: 'Fira Mono'
+
+extra_javascript:
+  - 'https://cdnjs.loli.net/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: math
+          class: arithmatex
+          format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde

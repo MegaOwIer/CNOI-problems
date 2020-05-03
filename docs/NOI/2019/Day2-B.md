@@ -1,17 +1,16 @@
-## B. landlords
+Time limit per test : $\texttt{4 s}$
 
-Time limit per test : 4 s
-
-Memory limit per test : 512 MB
+Memory limit per test : $\texttt{512 MB}$
 
 You can submit this problem at:
 
 + [LibreOJ](https://loj.ac/problem/3160)
-  + Input : `landlords.in`
-  + Output : `landlords.out`
+    + Input : `landlords.in`
+    + Output : `landlords.out`
 + [Luogu](https://www.luogu.org/problem/P5472)
++ [UOJ](https://uoj.ac/problem/482)
 
-### Description
+## Description
 
 Alice and Bob are playing card games, but Alice found that she can never win Bob, so she plans to cheat in the shuffling session.
 
@@ -25,7 +24,7 @@ The whole shuffling session can be devided into $m$ rounds. During the $i$-th ro
 
 Since the shuffling session is random, Alice can't know which card it is at a certain position. But Alice wants to know the expected score of the card at a certain position after $m$ rounds of shuffling.
 
-### Input
+## Input
 
 The first line contains $3$ integers $n, m, \text{type}$. When $\text{type} = 1$, $f(i) = i$, otherwise $f(i) = i^2$.
 
@@ -35,16 +34,16 @@ The third line contains a single integer $Q$ — the number of queries.
 
 Each of the next $Q$ lines contains a single integer $c_i$.
 
-### Output
+## Output
 
 You should print $Q$ lines, the $i$-th line contains the expected score of the $c_i$-th card from top to bottom.
 
 You should print the answer module $998244353$, that is, if the answer is $\frac{a}{b}$, where $(a, b) = 1$, you should print an integer $x$ such that $bx \equiv a \pmod{998244353}$ and $0 \leq x < 998244353$. One can prove that such $x$ is unique.
 
-### Samples
+## Samples
 
-#### Sample 1
-##### Input
+### Sample 1
+#### Input
 ```plain
 4 1 1
 3
@@ -52,12 +51,12 @@ You should print the answer module $998244353$, that is, if the answer is $\frac
 1
 
 ```
-##### Output
+#### Output
 ```plain
 249561090
 
 ```
-##### Explanation
+#### Explanation
 
 After shuffling, the cards will become:
 
@@ -70,13 +69,11 @@ So the expected score of the first place is $\frac{1}{4}(1 + 1 + 1 + 4) = \frac{
 
 If you still have no idea how the it shuffles, some pictures in the Chinese statement (`2019-NOI-Day2.pdf`) will show you how to get $\{1, 4, 2, 3\}$.
 
-More samples can be found in the folder `landlords/`.
-
-### Constraints
+## Constraints
 
 + $3 \leq n \leq 10^7$
 + $1 \leq m, Q \leq 5 \times 10^5$
 + $0 \leq A_i \leq n$
 + $\text{type} \in \{1, 2\}$
 
-For partial scores, you can look up at the origin statement (`2019-NOI-Day2.pdf`).
+For partial scores, you can look up at the origin statement (`NOI/2019/Day2.pdf`).

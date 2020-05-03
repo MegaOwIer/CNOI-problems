@@ -1,17 +1,16 @@
-## A. jump
+Time limit per test : $\texttt{2 s}$
 
-Time limit per test : 2 s
-
-Memory limit per test : 128 MB
+Memory limit per test : $\texttt{128 MB}$
 
 You can submit this problem at:
 
 + [LibreOJ](https://loj.ac/problem/3159)
-  + Input : `jump.in`
-  + Output : `jump.out`
+    + Input : `jump.in`
+    + Output : `jump.out`
 + [Luogu](https://www.luogu.org/problem/P5471)
++ [UOJ](https://uoj.ac/problem/481)
 
-### Description
+## Description
 
 There are $n$ cities in the Kingdom of Flea, numbered from $1$ to $n$, and city $1$ is the capital. All of the cities are located in a grid graph of size $w \times h$. Each city has an integer coordinate $(x, y)\,(1 \leq x \leq w, 1 \leq y \leq h)$, and the coordinates of the cities are different from each other.
 
@@ -21,7 +20,7 @@ Since that the cities are quite far away from each other, so fleas always travel
 
 Now the Flea King wants to know that for every city except the capital of the kingdom (city $1$), how much time it will at least take to get to the city from the capital.
 
-### Input
+## Input
 
 The first line contains $4$ integers $n, m, w, h$.
 
@@ -32,14 +31,14 @@ Each of the next $m$ lines contains $6$ integers $p_i, t_i, L_i, R_i, D_i, U_i$,
 It's guaranteed that every city is reachable from the capital.
 
 
-### Output
+## Output
 
 You should print $n - 1$ lines, the $i$-th line contains the minimum time it needs to get to city $i + 1$ from the capital.
 
-### Samples
+## Samples
 
-#### Sample 1
-##### Input
+### Sample 1
+#### Input
 ```plain
 5 3 5 5
 1 1
@@ -52,7 +51,7 @@ You should print $n - 1$ lines, the $i$-th line contains the minimum time it nee
 3 10 2 2 2 2
 
 ```
-##### Output
+#### Output
 ```plain
 50
 50
@@ -61,15 +60,14 @@ You should print $n - 1$ lines, the $i$-th line contains the minimum time it nee
 
 ```
 
-More samples can be found in the folder `jump/`.
 
-### Constraints
+## Constraints
 
 + $1 \leq n \leq 70000$
 + $1 \leq m \leq 150000$
 + $1 \leq w, h \leq n$
 + $1 \leq t_i \leq 10000$
 
-For partial scores, you can look up at the origin statement (`2019-NOI-Day2.pdf`).
+For partial scores, you can look up at the origin statement (`NOI/2019/Day2.pdf`).
 
 **Please note that the memory limit of this problem is 128 MB.**

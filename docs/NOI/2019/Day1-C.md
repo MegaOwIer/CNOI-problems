@@ -1,17 +1,16 @@
-## C. sequence
+Time limit per test : $\texttt{1 s}$
 
-Time limit per test : 1 s
-
-Memory limit per test : 512 MB
+Memory limit per test : $\texttt{512 MB}$
 
 You can submit this problem at:
 
 + [LibreOJ](https://loj.ac/problem/3158)
-  + Input : `sequence.in`
-  + Output : `sequence.out`
+    + Input : `sequence.in`
+    + Output : `sequence.out`
 + [Luogu](https://www.luogu.org/problem/P5470)
++ [UOJ](https://uoj.ac/problem/480)
 
-### Description
+## Description
 
 You are given two sequences $\{a_i\}$ and $\{b_i\}$ of length $n$, and the element of them are indexed from $1$ to $n$. You need to choose $K$ numbers in each sequence, and ensure that at least $L$ positions are chosen in both sequences. Your task is to maximize the sum of the $2K$ numbers.
 
@@ -26,7 +25,7 @@ $$
 \sum_{i=1}^{K}{a_{c_i}} + \sum_{i=1}^{K}{b_{d_i}}
 $$
 
-### Input
+## Input
 
 The first line contains a single integer $T$ — the number of test cases.
 
@@ -38,14 +37,14 @@ The second line contains $n$ integers $a_1, a_2, \cdots, a_n$.
 
 The third line contains $n$ integers $b_1, b_2, \cdots, b_n$.
 
-### Output
+## Output
 
 For each test case, print a single integer — the maximal sum.
 
-### Samples
+## Samples
 
-#### Sample 1
-##### Input
+### Sample 1
+#### Input
 ```plain
 5
 1 1 1
@@ -65,7 +64,7 @@ For each test case, print a single integer — the maximal sum.
 9 5 3 9 1 4 2 
 
 ```
-##### Output
+#### Output
 ```plain
 14
 12
@@ -74,7 +73,7 @@ For each test case, print a single integer — the maximal sum.
 62
 
 ```
-##### Explanation
+#### Explanation
 
 For the first case, $\{c_i\} = \{d_i\} = \{1\}$.
 
@@ -86,10 +85,8 @@ For the fourth case, $\{c_i\} = \{d_i\} = \{2, 3, 4, 6\}$.
 
 For the fifth case, $\{c_i\} = \{2, 3, 4, 5, 6\}$, $\{d_i\} = \{1, 2, 3, 4, 6\}$.
 
-More samples can be found in the folder `sequence/`.
-
-### Constraints
+## Constraints
 
 For all of the tests, $T \leq 10$, $1 \leq \sum{n} \leq 10^6$, $1 \leq L \leq K \leq n \leq 2 \times 10^5$, $1 \leq a_i, b_i \leq 10^9$.
 
-For partial scores, you can look up at the origin statement (`2019-NOI-Day1.pdf`).
+For partial scores, you can look up at the origin statement (`NOI/2019/Day1.pdf`).
