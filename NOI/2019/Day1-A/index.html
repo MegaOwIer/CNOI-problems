@@ -1,0 +1,826 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.5">
+    
+    
+      
+        <title>Day 1, Task A - CNOI Problem Archive</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.df84b5fe.min.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.8435c73a.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700%7CFira+Mono&display=fallback">
+        <style>body,input{font-family:"",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Fira Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="white" data-md-color-accent="red">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#description" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../.." title="CNOI Problem Archive" class="md-header-nav__button md-logo" aria-label="CNOI Problem Archive">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            CNOI Problem Archive
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Day 1, Task A
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/MegaOwIer/CNOI-problems/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="CNOI Problem Archive" class="md-nav__button md-logo" aria-label="CNOI Problem Archive">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    CNOI Problem Archive
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/MegaOwIer/CNOI-problems/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      NOI
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="NOI" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        NOI
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+    
+    <label class="md-nav__link" for="nav-2-1">
+      2019
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="2019" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        2019
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Day 1, Task A
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Day 1, Task A" class="md-nav__link md-nav__link--active">
+      Day 1, Task A
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    Input
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#samples" class="md-nav__link">
+    Samples
+  </a>
+  
+    <nav class="md-nav" aria-label="Samples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-1" class="md-nav__link">
+    Sample 1
+  </a>
+  
+    <nav class="md-nav" aria-label="Sample 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input_1" class="md-nav__link">
+    Input
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_1" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explanation" class="md-nav__link">
+    Explanation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-2" class="md-nav__link">
+    Sample 2
+  </a>
+  
+    <nav class="md-nav" aria-label="Sample 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input_2" class="md-nav__link">
+    Input
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_2" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constraints" class="md-nav__link">
+    Constraints
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Day1-B/" title="Day 1, Task B" class="md-nav__link">
+      Day 1, Task B
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Day1-C/" title="Day 1, Task C" class="md-nav__link">
+      Day 1, Task C
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Day2-A/" title="Day 2, Task A" class="md-nav__link">
+      Day 2, Task A
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Day2-B/" title="Day 2, Task B" class="md-nav__link">
+      Day 2, Task B
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Day2-C/" title="Day 2, Task C" class="md-nav__link">
+      Day 2, Task C
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      2018
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="2018" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        2018
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2018/Day1-A/" title="Day 1, Task A" class="md-nav__link">
+      Day 1, Task A
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../about/" title="About the Contests" class="md-nav__link">
+      About the Contests
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    Input
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#samples" class="md-nav__link">
+    Samples
+  </a>
+  
+    <nav class="md-nav" aria-label="Samples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-1" class="md-nav__link">
+    Sample 1
+  </a>
+  
+    <nav class="md-nav" aria-label="Sample 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input_1" class="md-nav__link">
+    Input
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_1" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explanation" class="md-nav__link">
+    Explanation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-2" class="md-nav__link">
+    Sample 2
+  </a>
+  
+    <nav class="md-nav" aria-label="Sample 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input_2" class="md-nav__link">
+    Input
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_2" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constraints" class="md-nav__link">
+    Constraints
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/MegaOwIer/CNOI-problems/edit/master/docs/NOI/2019/Day1-A.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                  <h1>Day 1, Task A</h1>
+                
+                <p>Time limit per test : <span><span class="MathJax_Preview">\texttt{1 s}</span><script type="math/tex">\texttt{1 s}</script></span></p>
+<p>Memory limit per test : <span><span class="MathJax_Preview">\texttt{512 MB}</span><script type="math/tex">\texttt{512 MB}</script></span></p>
+<p>You can submit this problem at:</p>
+<ul>
+<li><a href="https://loj.ac/problem/3156">LibreOJ</a><ul>
+<li>Input : <code>route.in</code></li>
+<li>Output : <code>route.out</code></li>
+</ul>
+</li>
+<li><a href="https://www.luogu.org/problem/P5468">Luogu</a><ul>
+<li>Memory limit is changed to 128 MB here</li>
+</ul>
+</li>
+<li><a href="https://uoj.ac/problem/478">UOJ</a></li>
+</ul>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
+<p>There are <span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> railway stations in the Kingdom of Cat, numbered from <span><span class="MathJax_Preview">1</span><script type="math/tex">1</script></span> to <span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span>. Little cat is going home (at station <span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span>) from station <span><span class="MathJax_Preview">1</span><script type="math/tex">1</script></span>. There are <span><span class="MathJax_Preview">m</span><script type="math/tex">m</script></span> trains in the kingdom, numbered from <span><span class="MathJax_Preview">1</span><script type="math/tex">1</script></span> to <span><span class="MathJax_Preview">m</span><script type="math/tex">m</script></span>. For the <span><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span>-th train, it will depart station <span><span class="MathJax_Preview">x_i</span><script type="math/tex">x_i</script></span> at time <span><span class="MathJax_Preview">p_i</span><script type="math/tex">p_i</script></span>, and arrive at station station <span><span class="MathJax_Preview">y_i</span><script type="math/tex">y_i</script></span> directly at time <span><span class="MathJax_Preview">q_i</span><script type="math/tex">q_i</script></span>. At time <span><span class="MathJax_Preview">0</span><script type="math/tex">0</script></span>, little cat is at station <span><span class="MathJax_Preview">1</span><script type="math/tex">1</script></span>.</p>
+<p>Little cat can go home by multiple transfers. One transfer is that for a pair of trains <span><span class="MathJax_Preview">u</span><script type="math/tex">u</script></span> and <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span>, if <span><span class="MathJax_Preview">y_u = x_v</span><script type="math/tex">y_u = x_v</script></span> and <span><span class="MathJax_Preview">q_u \leq p_v</span><script type="math/tex">q_u \leq p_v</script></span>, then after taking train <span><span class="MathJax_Preview">u</span><script type="math/tex">u</script></span>, little cat can wait at station <span><span class="MathJax_Preview">y_u</span><script type="math/tex">y_u</script></span> for <span><span class="MathJax_Preview">p_v - q_u</span><script type="math/tex">p_v - q_u</script></span> time units, and take train <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> at time <span><span class="MathJax_Preview">p_v</span><script type="math/tex">p_v</script></span>.</p>
+<p>Little cat wants to minimize its <em>anxiety</em>, which is calculated as followed:</p>
+<ul>
+<li>If little cat waits at some stations for <span><span class="MathJax_Preview">t\,(t \geq 0)</span><script type="math/tex">t\,(t \geq 0)</script></span> time units, its anxiety will be increased by <span><span class="MathJax_Preview">At^2 + Bt + C</span><script type="math/tex">At^2 + Bt + C</script></span>, where <span><span class="MathJax_Preview">A, B, C</span><script type="math/tex">A, B, C</script></span> are given constants.<ul>
+<li>Note that before little cat taking the first train at time <span><span class="MathJax_Preview">t</span><script type="math/tex">t</script></span>, it has been waiting for <span><span class="MathJax_Preview">t</span><script type="math/tex">t</script></span> time units at station <span><span class="MathJax_Preview">1</span><script type="math/tex">1</script></span>.</li>
+</ul>
+</li>
+<li>If little cat arrives at station <span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> at time <span><span class="MathJax_Preview">z</span><script type="math/tex">z</script></span>, its anxiety will be increased by <span><span class="MathJax_Preview">z</span><script type="math/tex">z</script></span>.</li>
+</ul>
+<p>Formally, if little cat takes <span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span> trains totally, whose numbers are <span><span class="MathJax_Preview">s_1, s_2, \cdots, s_k</span><script type="math/tex">s_1, s_2, \cdots, s_k</script></span>, little cat can get home if and only if:</p>
+<ul>
+<li><span><span class="MathJax_Preview">x_{s_1} = 1, y_{s_k} = n</span><script type="math/tex">x_{s_1} = 1, y_{s_k} = n</script></span></li>
+<li><span><span class="MathJax_Preview">y_{s_j} = x_{s_{j + 1}}</span><script type="math/tex">y_{s_j} = x_{s_{j + 1}}</script></span> and <span><span class="MathJax_Preview">q_{s_j} \leq p_{s_{j + 1}}</span><script type="math/tex">q_{s_j} \leq p_{s_{j + 1}}</script></span> hold for <span><span class="MathJax_Preview">1 \leq j &lt; k</span><script type="math/tex">1 \leq j < k</script></span></li>
+</ul>
+<p>and its anxiety will be
+$$
+q_{s_k} + (A \cdot p_{s_1}^2 + B \cdot p_{s_1} + C) + 
+\sum_{j = 1}^{k - 1}\left(A(p_{s_{j + 1}} - q_{s_j})^2 + B(p_{s_{j + 1}} - q_{s_j}) + C\right)
+$$</p>
+<p>Your task is to figure out the minimal anxiety.</p>
+<h2 id="input">Input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h2>
+<p>The first line contains <span><span class="MathJax_Preview">5</span><script type="math/tex">5</script></span> integers <span><span class="MathJax_Preview">n, m, A, B, C</span><script type="math/tex">n, m, A, B, C</script></span>.</p>
+<p>Each of the next <span><span class="MathJax_Preview">m</span><script type="math/tex">m</script></span> lines contains <span><span class="MathJax_Preview">4</span><script type="math/tex">4</script></span> integers <span><span class="MathJax_Preview">p_i, q_i, x_i, y_i</span><script type="math/tex">p_i, q_i, x_i, y_i</script></span>.</p>
+<p>It is guaranteed that there is at least one way for little cat to go home.</p>
+<h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
+<p>Print a single integer — the minimal anxiety.</p>
+<h2 id="samples">Samples<a class="headerlink" href="#samples" title="Permanent link">&para;</a></h2>
+<h3 id="sample-1">Sample 1<a class="headerlink" href="#sample-1" title="Permanent link">&para;</a></h3>
+<h4 id="input_1">Input<a class="headerlink" href="#input_1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>3 4 1 5 10
+1 2 3 4
+1 2 5 7
+1 2 6 8
+2 3 9 10
+</code></pre></div>
+
+<h4 id="output_1">Output<a class="headerlink" href="#output_1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>94
+</code></pre></div>
+
+<h4 id="explanation">Explanation<a class="headerlink" href="#explanation" title="Permanent link">&para;</a></h4>
+<p>There are <span><span class="MathJax_Preview">3</span><script type="math/tex">3</script></span> ways to go home.</p>
+<ol>
+<li>Take train <span><span class="MathJax_Preview">1, 4</span><script type="math/tex">1, 4</script></span> in turn, and the anxiety is <span><span class="MathJax_Preview">10 + 1 \times 3^2 + 5 \times 3 + 10 + 1 \times (9-4)^2 + 5 \times (9-4) + 10 = 104</span><script type="math/tex">10 + 1 \times 3^2 + 5 \times 3 + 10 + 1 \times (9-4)^2 + 5 \times (9-4) + 10 = 104</script></span></li>
+<li>Take train <span><span class="MathJax_Preview">2, 4</span><script type="math/tex">2, 4</script></span> in turn, and the anxiety is <span><span class="MathJax_Preview">10 + 1 \times 5^2 + 5 \times 5 + 10 + 1 \times (9-7)^2 + 5 \times (9-7) + 10 = 94</span><script type="math/tex">10 + 1 \times 5^2 + 5 \times 5 + 10 + 1 \times (9-7)^2 + 5 \times (9-7) + 10 = 94</script></span></li>
+<li>Take train <span><span class="MathJax_Preview">3, 4</span><script type="math/tex">3, 4</script></span> in turn, and the anxiety is <span><span class="MathJax_Preview">10 + 1 \times 6^2 + 5 \times 6 + 10 + 1 \times (9-8)^2 + 5 \times (9-8) + 10 = 102</span><script type="math/tex">10 + 1 \times 6^2 + 5 \times 6 + 10 + 1 \times (9-8)^2 + 5 \times (9-8) + 10 = 102</script></span></li>
+</ol>
+<p>So the minimal anxiety is <span><span class="MathJax_Preview">94</span><script type="math/tex">94</script></span>.</p>
+<h3 id="sample-2">Sample 2<a class="headerlink" href="#sample-2" title="Permanent link">&para;</a></h3>
+<h4 id="input_2">Input<a class="headerlink" href="#input_2" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>4 3 1 2 3
+1 2 2 3
+2 3 5 7
+3 4 7 9
+</code></pre></div>
+
+<h4 id="output_2">Output<a class="headerlink" href="#output_2" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>34
+</code></pre></div>
+
+<h2 id="constraints">Constraints<a class="headerlink" href="#constraints" title="Permanent link">&para;</a></h2>
+<p>For all of the tests, <span><span class="MathJax_Preview">2 \leq n \leq 10^5</span><script type="math/tex">2 \leq n \leq 10^5</script></span>, <span><span class="MathJax_Preview">1 \leq m \leq 2 \times 10^5</span><script type="math/tex">1 \leq m \leq 2 \times 10^5</script></span>, <span><span class="MathJax_Preview">0 \leq A \leq 10</span><script type="math/tex">0 \leq A \leq 10</script></span>, <span><span class="MathJax_Preview">0 \leq B, C \leq 10^6</span><script type="math/tex">0 \leq B, C \leq 10^6</script></span>, <span><span class="MathJax_Preview">1 \leq x_i, y_i \leq n</span><script type="math/tex">1 \leq x_i, y_i \leq n</script></span>, <span><span class="MathJax_Preview">x_i \neq y_i</span><script type="math/tex">x_i \neq y_i</script></span>, <span><span class="MathJax_Preview">0 \leq p_i &lt; q_i \leq 10^3</span><script type="math/tex">0 \leq p_i < q_i \leq 10^3</script></span>.</p>
+<p>For partial scores, you can look up at the origin statement (<code>NOI/2019/Day1.pdf</code>).</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../.." title="Home" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../Day1-B/" title="Day 1, Task B" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Day 1, Task B
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.83fe6e3c.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.7e1cb91c.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.37585f48.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://cdnjs.loli.net/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
