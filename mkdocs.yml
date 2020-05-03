@@ -8,14 +8,14 @@ nav:
   - Home: index.md
   - NOI:
     - 2019:
-      - Day 1, Task A: NOI/2019/Day1-A.md
-      - Day 1, Task B: NOI/2019/Day1-B.md
-      - Day 1, Task C: NOI/2019/Day1-C.md
-      - Day 2, Task A: NOI/2019/Day2-A.md
-      - Day 2, Task B: NOI/2019/Day2-B.md
-      - Day 2, Task C: NOI/2019/Day2-C.md
+      - Task A, Day 1: NOI/2019/Day1-A.md
+      - Task B, Day 1: NOI/2019/Day1-B.md
+      - Task C, Day 1: NOI/2019/Day1-C.md
+      - Task A, Day 2: NOI/2019/Day2-A.md
+      - Task B, Day 2: NOI/2019/Day2-B.md
+      - Task C, Day 2: NOI/2019/Day2-C.md
     - 2018:
-      - Day 1, Task A: NOI/2018/Day1-A.md
+      - Task A, Day 1: NOI/2018/Day1-A.md
   - About the Contests: about.md
 
 # Theme

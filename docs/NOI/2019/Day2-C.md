@@ -38,7 +38,7 @@ void explore(int N, int M);
 + $\texttt{M}$ : the number of roads.
 + This function is called exactly once for each test case.
 
-Your program can call the following function:
+Your program can call the following functions:
 
 ```c++
 void modify(int x);
@@ -84,19 +84,45 @@ It is guaranteed that grader will use no more than $\texttt{1 s}$ of time and no
 
 ## Sample grader
 
-The sample grader reads the input in the following format:
+You are given a sample grader (`grader.c/cpp` for `C/C++` and `graderhelperlib.pas` for `Pascal`) together with the sample tests. In order to test the samples, you need to compile the grader and your code into a single executable file.
+
+The executable file will get input in the following format:
 
 The first line contains $3$ integers $L_m, L_q, L_c$.
 
 The second line contains $2$ integers $N, M$.
 
-Each of the next $M$ lines contains $2$ integers $x, y$, refers to an road between cave $x$ and cave $y$.
+Each of the next $M$ lines contains $2$ integers $x, y$, refers to a road between cave $x$ and cave $y$.
 
-If your program is judged as **Accepted**, the sample grader prints `Correct` and the number of times you call each function. Otherwise it will print what's wrong with your solution.
+If your program is judged as **Accepted**, the sample grader prints `Correct` and the number of times you call each function. Otherwise, it will print what's wrong with your solution.
 
 ## Sample
 
-You can find an example of communication in the Chinese statement (`NOI/2019/Day2.pdf`).
+Assume that the input is as follows:
+
+```plain
+100 200 300
+3 2
+0 1
+1 2
+
+```
+
+The first line shows that you can call `modify(x)` for no more than $100$ times, `query(x)` for no more than $200$ times, and `check(x)` for no more than $300$ times, respectively.
+
+The second line shows that $N = 3$ and $M = 2$.
+
+A possible way of interaction is listed below:
+
+|Your Program|Grader|Comment|
+|:-:|:-:|:-:|
+| | call `explore(3, 2)` | Test Begins. |
+| call `modify(0)` |  | Perform operate `1` on cave $0$. |
+| call `query(2)` | return $0$. | The light in cave $2$ is off currently. |
+| call `report(0, 1)` |  | Find a road $(0, 1)$ and record it. |
+| call `check(0)` | return $1$. | All the roads connected to cave $0$ have been recorded. |
+| call `report(2, 1)` |  | Find a road $(2, 1)$ and record it. |
+| return | Print `Correct`. | You solve the problem correctly. |
 
 
 ## Constraints
@@ -104,6 +130,6 @@ You can find an example of communication in the Chinese statement (`NOI/2019/Day
 + $3 \leq N \leq 200000$
 + $2 \leq M \leq 300000$
 
-The constraints of each test can be found in the origin statement (`NOI/2019/Day2.pdf`).
+More constraints are attached to each test, which can be found in the origin statement (`NOI/2019/Day2.pdf`).
 
 Note: the lowest digit of $N$ may help you get partial scores easilier.
