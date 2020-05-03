@@ -26,7 +26,7 @@ The machine can only deal with one operation at the same time, and the number of
 
 Your task is to write a program to find all the $M$ edges correctly.
 
-### Implementation details
+## Implementation details
 
 You should implement the following function:
 
