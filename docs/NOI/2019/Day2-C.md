@@ -13,7 +13,7 @@ You can submit this problem at:
 
 ## Description
 
-The underground palace consists of $N$ caves and $M$ roads between them, which can be represented as an undirected simple graph of $N$ vertices and $M$ edges. The caves are numbered from $0$ to $n - 1$, and you **have no idea** where the roads are.
+The underground palace consists of $N$ caves and $M$ roads between them, which can be represented as an undirected simple graph of $N$ vertices and $M$ edges. The caves are numbered from $0$ to $n - 1$, and you do **NOT** know where the roads are.
 
 There is a light in each cave, all of them are either off or on. Initially, all the lights are off, and the status of the lights can be changed only by the mysterious machine in your hand. Specifically, it can perform the following $4$ operations:
 
@@ -26,7 +26,7 @@ The machine can only deal with one operation at the same time, and the number of
 
 Your task is to write a program to find all the $M$ edges correctly.
 
-## Implementation details
+## Interaction Protocol
 
 You should implement the following function:
 

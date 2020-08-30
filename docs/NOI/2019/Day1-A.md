@@ -7,8 +7,8 @@ You can submit this problem at:
 + [LibreOJ](https://loj.ac/problem/3156)
     - Input : `route.in`
     - Output : `route.out`
-+ [Luogu](https://www.luogu.org/problem/P5468)
-    - Memory limit is changed to 128 MB here
++ [Luogu](https://www.luogu.org/problem/P5468) (original test cases)
+    - Or you can try to submit [here](https://www.luogu.com.cn/problem/P6302), whose test cases are stronger.
 + [UOJ](https://uoj.ac/problem/478)
 
 ## Description
