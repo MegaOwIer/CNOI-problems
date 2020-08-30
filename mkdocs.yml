@@ -7,6 +7,13 @@ repo_url: https://github.com/MegaOwIer/CNOI-problems
 nav:
   - Home: index.md
   - NOI:
+    - 2020:
+      - Task A, Day 1: NOI/2020/Day1-A.md
+      # - Task B, Day 1: NOI/2020/Day1-B.md
+      # - Task C, Day 1: NOI/2020/Day1-C.md
+      # - Task A, Day 2: NOI/2020/Day2-A.md
+      # - Task B, Day 2: NOI/2020/Day2-B.md
+      # - Task C, Day 2: NOI/2020/Day2-C.md
     - 2019:
       - Task A, Day 1: NOI/2019/Day1-A.md
       - Task B, Day 1: NOI/2019/Day1-B.md
